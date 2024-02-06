@@ -1,4 +1,5 @@
 // import { useState } from "react";
+
 // import reactLogo from "./assets/react.svg";
 // import viteLogo from "/vite.svg";
 // import "./App.css";
@@ -34,16 +35,40 @@
 
 // export default App;
 
-import { Product } from './Product';
+// import { BookList } from './BookList';
+
+// const favouriteBooks = [
+//   { id: 'id-1', name: 'JS for beginners' },
+//   { id: 'id-2', name: 'React basics' },
+//   { id: 'id-3', name: 'React Router overview' },
+// ];
+
+// export default function App() {
+//   return (
+//     <>
+//       <h1>Books of the week</h1>
+//       <BookList books={favouriteBooks} />
+//     </>
+//   );
+// }
+
+import { Alert } from './Alert';
 
 export default function App() {
   return (
-    <div>
-      <h1>Products</h1>
-
-      <Product />
-      <Product />
-      <Product />
-    </div>
+    <>
+      <Alert variant="info">
+        Would you like to browse our recommended products?
+      </Alert>
+      <Alert variant="error">
+        There was an error during your last transaction
+      </Alert>
+      <Alert variant="success">
+        Payment received, thank you for your purchase
+      </Alert>
+      <Alert variant="warning">
+        Please update your profile contact information
+      </Alert>
+    </>
   );
 }
